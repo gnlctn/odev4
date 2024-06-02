@@ -1,17 +1,25 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Ikperson Person1= new Ikperson();
+        Person1.PersonelAdi="Ayşe";
+        Person1.PersonelSoyadi="Can";
+        Person1.PersonelMail="aysecan@gmail.com";
+        Person1.PersonelTelefon="905396711213";
+        Person1.PersonelNumber=256755;
+        Person1.PersonelMaas=37000;
+        Person1.Personellistesi();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Ikperson Person2= new Ikperson();
+        Person2.PersonelAdi="Kaan";
+        Person2.PersonelSoyadi="Şanlı";
+        Person2.PersonelMail="kaansanli@gmail.com";
+        Person2.PersonelTelefon="905396711415";
+        Person2.PersonelNumber=256856;
+        Person2.PersonelMaas=50000;
+        Person2.Personellistesi();
+
+
     }
 }
